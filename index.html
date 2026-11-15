@@ -25,6 +25,110 @@
 		
 		}
 
+		.header {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			padding: 15px;
+			font-size: 15px;
+		}
+		.Logo {
+			margin-right: auto;
+			color: #fbbf29;
+			font-family: 'Cinzel', serif;
+			font-size: 25px;
+			font-weight: bold;
+		}
+
+		.search {
+			width: 300px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-radius: 20px;
+			padding: 10px;
+			background-color: #f4f8f9;
+			transition: box-shadow 0.25s;
+		}
+
+		.search-input {
+			width : 100%;
+			color: #333;
+			border: none;
+			outline: none;
+			background-color: #f4f8f9;
+			
+			
+		}
+
+		.search:focus-within {
+			box-shadow : rgba(0,0,0,0.75) 0 0 2px;
+		}
+
+		.accounts {
+			display: flex;
+			justify-content: space-between;
+			padding: 10px;
+			gap: 20px;
+		}
+			.accounts div,
+			.search i{ 
+				cursor : pointer;
+			}
+
+		.banner {
+			background-color: #f4f8f9;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			border-radius: 10px;
+			width: 100%;
+			margin-top: 20px;
+		}
+
+			.discount {
+				padding : 10px;
+				text-align : center;
+				width : fit-content;
+				background-color : #fbbf29;
+				border-radius : 20px;
+			}
+
+			.banner img {
+				height: 450px;
+				width: 250px;
+			}
+
+			.banner button {
+				color: black;
+				border : 1px solid black;
+				border-radius: 3px;
+				width: 120px;
+				height: 40px;
+				font-weight: bold;
+				cursor: pointer;
+				transition: 0.4s;
+			}
+
+			.banner button:hover {
+				color : white;
+				background-color : black;
+
+			}
+
+				.banner_details h1 {
+					max-width: 400px;
+					font-size: 42px;
+					line-height: 1.2;
+				}
+
+		.banner_details p {
+			max-width: 400px;
+			line-height: 1.8;
+			color: #777;
+			font-size: 14px;
+		}
+
 		.cards_grid {
 			display: flex;
 			flex-wrap: wrap;
@@ -123,13 +227,47 @@
 			}
 		}
 
+
+
     </style>
 
 </head>
 <body>
 <div class="container">
+	<div class="header">
+		<div class="Logo">STORE</div>
+		<div class="search">
+			<input class="search-input" type="text" placeholder="Search" />
+			<i class="fa-solid fa-magnifying-glass"></i>
+		</div>
+		<div class="accounts">
+		<div>
+			<i class="fa-solid fa-cart-plus"></i>
+			<span>Cart</span>
+		</div>
+		<div>
+			<i class="fa-solid fa-circle-user"></i>
+			<span>Account</span>
+		</div>
+		</div>
 
-	<h1>Our Top Catigories:</h1>
+	</div>
+	<div class="banner">
+		<div class="banner_details">
+			<div class="discount">WEEKLY DISCOUNTS!</div>
+			<h1>Premium Product Online Shop</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+			<button>Shop Now</button>
+
+		</div>
+		<div class="banner_image">
+			<img src="./products/product7.png" alt="IPHONE 18">
+		</div>
+
+
+	</div>
+
+	<h1 style="margin-top : 10px;">Our Top Catigories:</h1>
 
 	<div class="cards_grid">
 	<div class="card">
